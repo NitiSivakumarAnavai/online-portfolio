@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    flex: 1;
+}
+
+.navbar .logo-heading {
+    margin: 0;
+}
+
+.navbar .tabs {
+    flex: 3;
+}
+
+.navbar .tabs ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .tabs ul li {
+    margin: 0 10px;
+}
+
+.navbar .tabs ul li a {
+    color: #fff;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+.navbar .tabs ul li a:hover {
+    background-color: #555;
+}
+
+.navbar .bars {
+    display: none;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Project Section Styles */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.project-details {
+    max-width: 600px;
+}
+
+.project-details h2 {
+    margin-top: 0;
+}
+
+.project-details p {
+    margin: 10px 0;
+}
+
+.project-details a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.project-details a:hover {
+    background-color: #555;
+}
+
+/* Experience Section Styles */
+#experience {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.desciption {
+    text-align: center;
+}
+
+.desciption h1 {
+    margin-top: 0;
+}
+
+/* Education Section Styles */
+.education {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-entry {
+    margin-bottom: 20px;
+}
+
+.education-entry h2 {
+    margin-top: 0;
+}
+
+/* Utility Classes */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .tabs ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar .bars {
+        display: block;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project img {
+        margin: 0 0 20px 0;
+    }
+}
+
+/* Mobile Navigation Toggle */
+#bar-icon.active + .tabs ul {
+    display: flex;
+}
